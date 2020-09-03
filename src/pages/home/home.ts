@@ -43,6 +43,10 @@ export class HomePage {
       this.auth.sucessfulLogin(response.headers.get('Authorization'));
       this.navCtrl.setRoot('CategoriasPage');
     },
-    error =>{})
+    error =>{});
+  }
+
+  signup() {
+    this.navCtrl.push('SignupPage');
   }
 }
